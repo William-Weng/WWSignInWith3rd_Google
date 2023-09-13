@@ -28,6 +28,8 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    /// 設定 <YOUR_IOS_CLIENT_ID> + <YOUR_DOT_REVERSED_IOS_CLIENT_ID>
+    /// - Parameter sender: UIButton
     @IBAction func signInWithGoogle(_ sender: UIButton) {
         
         WWSignInWith3rd.Google.shared.login(withPresenting: self) { result in
