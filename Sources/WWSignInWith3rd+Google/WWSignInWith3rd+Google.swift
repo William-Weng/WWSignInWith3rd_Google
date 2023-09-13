@@ -58,12 +58,17 @@ public extension WWSignInWith3rd.Google {
         return GIDSignIn.sharedInstance.currentUser
     }
     
-    /// 登出是否成功？
+    /// 登入是否成功？
     /// - Returns: Bool
     func isLogin() -> Bool {
-        
         if (currentUser() != nil) { return true }
         return false
+    }
+    
+    /// 斷線
+    /// - Parameter result: Error?
+    func disconnect(result: @escaping (Error?) -> Void) {
+        GIDSignIn.sharedInstance.disconnect { result($0) }
     }
 }
 
