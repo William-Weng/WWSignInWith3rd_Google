@@ -1,6 +1,6 @@
 //
-//  WWSignInWith3rd+Google.swift
-//  WWSignInWith3rd+Google
+//  WWSignInWith3rd_Google.swift
+//  WWSignInWith3rd_Google
 //
 //  Created by William.Weng on 2023/8/29.
 //
@@ -65,7 +65,7 @@ public extension WWSignInWith3rd.Google {
         return false
     }
     
-    /// 斷線
+    /// 斷線?
     /// - Parameter result: Error?
     func disconnect(result: @escaping (Error?) -> Void) {
         GIDSignIn.sharedInstance.disconnect { result($0) }
