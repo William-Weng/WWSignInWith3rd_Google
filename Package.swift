@@ -13,16 +13,10 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/William-Weng/WWSignInWith3rd_Apple", .upToNextMinor(from: "1.1.0")),
-        .package(url: "https://github.com/google/GoogleSignIn-iOS/", from: "7.0.0"),
+        .package(url: "https://github.com/google/GoogleSignIn-iOS/", from: "7.1.0"),
     ],
     targets: [
-        .target(name: "WWSignInWith3rd_Google",
-                dependencies: [
-                    "WWSignInWith3rd_Apple",
-                    .product(name: "GoogleSignInSwift", package: "GoogleSignIn-iOS")
-                ],
-                resources: [.copy("Privacy")]
-               ),
+        .target(name: "WWSignInWith3rd_Google", dependencies: ["WWSignInWith3rd_Apple", .product(name: "GoogleSignInSwift", package: "GoogleSignIn-iOS")], resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5
