@@ -53,6 +53,15 @@
         "revision" : "287af76bb04e18060c0c524e14e3b99db6dd2a56",
         "version" : "1.1.0"
       }
+    },
+    {
+      "identity" : "wwsigninwith3rd_google",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWSignInWith3rd_Google",
+      "state" : {
+        "revision" : "f03dcba2c3d5c7bc4948a5c50d43bea673fe6ebe",
+        "version" : "1.1.1"
+      }
     }
   ],
   "version" : 2
