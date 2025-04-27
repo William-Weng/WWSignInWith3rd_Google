@@ -3,7 +3,7 @@
 //  Example
 //
 //  Created by William.Weng on 2023/9/11.
-//  ~/Library/Caches/org.swift.swiftpm/
+//
 
 import UIKit
 import WWPrint
@@ -16,7 +16,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    /// 設定 <YOUR_IOS_CLIENT_ID> + <YOUR_DOT_REVERSED_IOS_CLIENT_ID>
+    /// [設定 <YOUR_IOS_CLIENT_ID> + <YOUR_DOT_REVERSED_IOS_CLIENT_ID>](https://developers.google.com/identity/sign-in/ios/start-integrating?hl=zh-tw)
     /// - Parameter sender: UIButton
     @IBAction func signInWithGoogle(_ sender: UIButton) {
         
